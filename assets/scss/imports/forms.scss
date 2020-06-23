@@ -1,0 +1,136 @@
+// Custom forms stylesheet for Pro Clean STL
+// Author: HLM_Rico
+
+// Quick Form
+	#quick {
+		padding: 2rem;
+		height: auto;
+		margin: auto;
+		background: transparent;
+
+		& input:not(#quick_submit), textarea {
+			margin: 1rem 0;
+			padding: 0.5rem;
+			width: 100%;
+			border: 2px solid $white;
+			background: transparent;
+			color: $white;
+			font-family: $sans;
+			transition: all 0.3s ease;
+
+			&::placeholder {
+				color: $white;
+				font-weight: 500;
+				transition: all 0.3s ease;
+			}
+
+			&:focus {
+				border-color: $hlm-primary;
+				color: $hlm-primary;
+				outline: none;
+
+				&::placeholder {
+					color: $hlm-primary;
+				}
+			}
+		}
+
+		& #quick_submit {
+			margin: 1rem 0;
+			padding: 0.5rem;
+			width: 100%;
+			border: 2px solid $hlm-primary;
+			background: $hlm-primary;
+			color: $white;
+			font-family: $sans;
+			font-weight: 500;
+			font-size: 1.2rem;
+			transition: all 0.3s ease;
+
+			&:hover {
+				border-color: $white;
+				color: $white;
+				background: transparent;
+			}
+
+			&:focus {
+				border-color: $hlm-secondary;
+				color: $white;
+				outline: none;
+				background: $hlm-secondary;
+			}
+
+			&:active {
+				color: $white;
+			}
+		}
+	}
+
+
+// Contact Form
+	#contact {
+		padding: 1rem 2rem 2rem 2rem;
+
+		& input:not(#submit), textarea {
+			margin: 1rem 0;
+			padding: 0.5rem;
+			width: 100%;
+			border: 2px solid $hlm-primary;
+			background: transparent;
+			color: $hlm-primary;
+			font-family: $sans;
+			transition: all 0.3s ease;
+
+			&::placeholder {
+				color: $hlm-primary;
+				font-weight: 500;
+				transition: all 0.3s ease;
+			}
+
+			&:focus {
+				border-color: $hlm-secondary;
+				color: $hlm-secondary;
+				outline: none;
+
+				&::placeholder {
+					color: $hlm-secondary;
+				}
+			}
+		}
+
+		& #submit {
+			margin: 1rem 0;
+			padding: 0.5rem;
+			width: 100%;
+			border: 2px solid $hlm-primary;
+			background: $hlm-primary;
+			color: $white;
+			font-family: $sans;
+			font-weight: 500;
+			font-size: 1.2rem;
+			transition: all 0.3s ease;
+
+			&:hover {
+				border-color: $hlm-tertiary;
+				color: $white;
+				background: $hlm-tertiary;
+			}
+
+			&:focus {
+				border-color: $hlm-secondary;
+				color: $white;
+				outline: none;
+				background: $hlm-secondary;
+			}
+		}
+	}
+
+	@media only screen and (max-width: 767px) {
+		#quick {
+			display: none;
+		}
+
+		#contact {
+			padding: 0;
+		}
+	}

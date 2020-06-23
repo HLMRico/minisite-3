@@ -1,0 +1,35 @@
+// Custom mixins for {Client}
+// Author: HLM_Rico
+
+// Typography
+
+	@mixin headline-hero {
+		font-family: $sans;
+		font-weight: 700;
+		font-size: 3rem;
+	}
+
+	@mixin headline-body {
+		font-family: $sans;
+		font-weight: 700;
+		font-size: 2.5rem;
+	}
+
+	@mixin secondary-headline {
+		font-family: $sans;
+		font-weight: 700;
+		font-size: 2rem;
+	}
+
+	@mixin subhead {
+		font-family: $serif;
+		font-weight: 700;
+		font-size: 1.2rem;
+		letter-spacing: 1px;
+	}
+
+	@mixin paragraph {
+		font-family: $serif;
+		font-weight: 400;
+		font-size: 1rem;
+	}
